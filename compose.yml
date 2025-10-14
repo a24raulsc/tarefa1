@@ -1,0 +1,26 @@
+services:
+  dnsserver:
+    build: dnsserver
+    hostname: dnsserver
+    ports:
+      - 127.0.0.1:53:53    #So na rede principal
+    volumes:
+      - ./dnsserver/named.conf.options:/etc/bind/named.conf.options
+    networks:
+      rededns:
+        ipv4_address: 192.168.20.10
+  cliente:
+    build: cliente
+    hostname: darthvader
+    networks:
+      rededns:
+        ipv4_address: 192.168.20.100
+    dns: 192.168.20.10
+networks:
+  rededns:
+    ipam:
+      config:
+        - subnet: 192.168.20.0/24
+
+
+
