@@ -16,6 +16,6 @@ RUN chmod a+x /dns/entrypoint.sh
 EXPOSE 53
 WORKDIR /var/cache/bind
 
-CMD ["-4"]
+CMD ["-g","-4"]
 
 ENTRYPOINT ["/dns/entrypoint.sh"]
