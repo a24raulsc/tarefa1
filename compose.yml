@@ -23,6 +23,16 @@ services:
     networks:
       rededns:
         ipv4_address: 192.168.20.11
+  leia:
+    build: dnsserver
+    hostname: leia
+    volumes:
+      - ./leia/named.conf.options:/etc/bind/named.conf.options
+      - ./leia/named.conf.local:/etc/bind/named.conf.local
+      - ./leia/db.imperio.starwars.lan:/etc/bind/db.imperio.starwars.lan
+    networks:
+      rededns:
+        ipv4_address: 192.168.20.69
   cliente:
     build: cliente
     hostname: cliente

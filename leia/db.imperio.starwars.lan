@@ -1,0 +1,12 @@
+$TTL    86400
+@              IN      SOA     leia.imperio.starwars.lan mail.imperio.starwars.lan ( ;Subdominio delegado
+                                4         
+                           604800    
+                            86400     
+                          2419200   
+                            86400 )   
+
+@              IN      NS      leia.imperio.starwars.lan.
+leia           IN      A       192.168.20.69
+tsuichoi       IN      A       192.168.20.225
+bultarswan     IN      A       192.168.20.226
