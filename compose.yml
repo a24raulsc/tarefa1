@@ -39,6 +39,7 @@ services:
     hostname: cliente
     volumes:
       - ./cliente/chave.key:/etc/chave.key
+      - ./cliente/rndc.conf:/etc/bind/rndc.conf
     networks:
       rededns:
         ipv4_address: 192.168.20.100

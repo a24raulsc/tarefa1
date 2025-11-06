@@ -7,6 +7,17 @@
     //category queries { query.log; };
 //};
 
+key "chave-remota" {
+        algorithm hmac-sha256;
+        secret "e2uqiqLTEci6AugWWb0fxGnMDXpgjlrTGiTfwy0v3G8=";
+};
+
+include "/etc/bind/rndc.key";
+controls {
+    inet 127.0.0.1 port 953 allow { 127.0.0.1; } keys { "rndc-key"; };
+    inet 192.168.20.10 port 953 allow { 192.168.20.100; } keys { "chave-remota"; };
+};
+
 options {
 	directory "/var/cache/bind";
 	forwarders {};	
