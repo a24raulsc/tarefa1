@@ -1,0 +1,4 @@
+client @0x7bf83bc75000 192.168.20.11#48834/key transfer-key (starwars.lan): query: starwars.lan IN SOA -E(0)S (192.168.20.10)
+client @0x7bf832c31000 192.168.20.11#56104/key transfer-key (20.168.192.in-addr.arpa): query: 20.168.192.in-addr.arpa IN SOA -E(0)S (192.168.20.10)
+client @0x7bf83663e000 192.168.20.11#33865/key transfer-key (20.168.192.in-addr.arpa): query: 20.168.192.in-addr.arpa IN AXFR -E(0)ST (192.168.20.10)
+client @0x7bf834244000 192.168.20.11#35821/key transfer-key (starwars.lan): query: starwars.lan IN AXFR -E(0)ST (192.168.20.10)
