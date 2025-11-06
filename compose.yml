@@ -37,6 +37,8 @@ services:
   cliente:
     build: cliente
     hostname: cliente
+    volumes:
+      - ./cliente/chave.key:/etc/chave.key
     networks:
       rededns:
         ipv4_address: 192.168.20.100

@@ -1,11 +1,11 @@
-logging {
-    channel query.log {
-        file "/var/log/bind/query.log";
-        severity dynamic;
-    };
+//logging {
+    //channel query.log {
+        //file "/var/log/bind/query.log";
+        //severity dynamic;
+    //};
 	
-    category queries { query.log; };
-};
+    //category queries { query.log; };
+//};
 
 options {
 	directory "/var/cache/bind";
