@@ -1,0 +1,3 @@
+client @0x70a670033000 192.168.20.100#35533/key update-key: updating zone 'starwars.lan/IN': adding an RR at 'prueba.starwars.lan' A 192.168.20.146
+client @0x70a670033000 192.168.20.100#35533/key update-key: updating zone 'starwars.lan/IN': error: journal open failed: unexpected error
+client @0x70a649e65000 192.168.20.100#48405/key update-key: updating zone 'starwars.lan/IN': adding an RR at 'ayudajoder.starwars.lan' A 192.168.20.150

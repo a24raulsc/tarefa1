@@ -1,11 +1,16 @@
-//logging {
-    //channel query.log {
-        //file "/var/log/bind/query.log";
-        //severity dynamic;
-    //};
+logging {
+    channel query.log {
+        file "/var/log/bind/query.log";
+        severity dynamic;
+    };
+    channel update.log {
+        file "/var/log/bind/update.log";
+        severity dynamic;
+    };
 	
-    //category queries { query.log; };
-//};
+    category update { update.log; };
+    category queries { query.log; };
+};
 
 key "chave-remota" {
         algorithm hmac-sha256;
